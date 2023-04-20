@@ -14,4 +14,6 @@ In this project we have an EEG dataset which contains signals from 126 electrode
 9. root mean square
 10. sum of absolute of signal's first differential
 11. skewness
-12. kurtosis
+12. kurtosis 
+## Classification
+Each signals with 3500 size are devided into 100 equal segments with 5% overlap.In other words we have 90 trials each contains 126 channels and each channel contains a time series of 3500 sample. First of all we segment each time series into 100 equal segments, which results in 90****100
