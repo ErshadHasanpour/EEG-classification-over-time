@@ -1,1 +1,1 @@
-# EEG-classification-over-time
+# EEG-classification-over-time with temporal fetures
