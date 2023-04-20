@@ -1,1 +1,2 @@
-# EEG-classification-over-time with temporal fetures
+# EEG classification over time with temporal fetures
+## Dataset
