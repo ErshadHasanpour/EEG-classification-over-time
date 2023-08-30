@@ -18,3 +18,9 @@ Twelve temporal features are obtained from time series of each channel. These fe
 ## Classification
 Each signal with 3500 size was devided into 100 equal segments with 5% overlap. Originally we had 90 trials each consists of 126 channels and each channel contains a time series of 3500 samples. First of all we segmented each time series into 100 equal segments, which results in  90×100=9000 trials with 126 channels with time series of 40 samples. Secondly, for each of this segmented trials, we extracted those 12 features for each channels. then we abotained 12×126=1512 features for each of the 9000 segmented trials.
 To be more specific, we had 100 different datasets(each of them relates to an specificic time interval), each of which contains 90 segmented trials with 1512 features. For every single of these datasets we train a KNN classifier to classify these two tasks. finally we analyzed the accuracy of each of these classifiers, in order to find the best time interval in which the accuracy of the classification is maximum.  
+
+In this code, a classic small dataset, well known as ‘cifar10’ with 32x32 square images from 10 classes has been used to implement the idea of diffusion models on them. For the forward step, we used the reparameterization trick to add noise on original image as a function of time steps. Indicated below is the original image and noisy images in time steps 20, 40, 60 and 80.   
+After which a modified U-net with additional self-attention layers, was applied to be trained based on these images in consequent time steps. Due to lack of ultra-fast processors the corresponding U-net was trained for only 20 epochs. Finally, when our U-net was trained we employed it to the Annealed Langevin dynamics algorithm to generate some new images, 10 of them are illustrated below. 
+  
+
+	
